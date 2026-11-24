@@ -1,34 +1,34 @@
 # Nusa HRIS
 
-Demo HRIS (Human Resource Information System) untuk portfolio. Semua data fiktif.
+A demo HRIS (Human Resource Information System) built for my portfolio. All data is fictional.
 
-**Demo langsung: [nusa-hris-portfolio.vercel.app] (https://nusa-hris-portfolio.vercel.app)**
+**Live Demo: [nusa-hris-portfolio.vercel.app] (https://nusa-hris-portfolio.vercel.app)**
 
-## Fitur
-- **Dashboard**: ringkasan yang bisa diklik, grafik batang kehadiran (7/14/30 hari kerja) dengan tooltip, grafik garis tingkat kehadiran, donat status hari ini, karyawan per departemen, antrean persetujuan, aktivitas terbaru, dan daftar yang sedang cuti.
-- **Data karyawan**: cari, filter, urutkan kolom, profil lengkap dengan saldo cuti, tambah karyawan.
-- **Absensi**: clock in/out (dengan opsi WFH), tabel hari ini dengan filter status, rekap bulanan berbentuk heatmap.
-- **Cuti & izin**: form pengajuan dengan validasi saldo, tab status, approve/tolak oleh HR, baris baru disorot sesaat.
-- **Kinerja**: skor per kuartal, sebaran penilaian, target (KPI) dengan progres, review atasan. HR mengisi review, karyawan melihat kinerjanya sendiri.
-- **Live**: aktivitas clock in dan pengajuan cuti disimulasikan di browser (tanpa backend), lengkap dengan notifikasi dan tombol jeda.
-- Peran **HR Admin** dan **Karyawan** (toggle di atas), tema biru, mode terang/gelap, responsif sampai layar HP.
+## Features
+- **Dashboard**: clickable summary tiles, stacked bar chart of attendance (7/14/30 working days) with tooltips, attendance rate line chart, today's status donut, headcount by department, pending approvals, recent activity, and who is on leave today.
+- **Employees**: search, filter, sortable columns, full profile with leave balance, add new employees.
+- **Attendance**: clock in/out (with a WFH option), today's table with status filters, monthly heatmap.
+- **Leave & permits**: request form with balance validation, status tabs, approve/reject by HR, newly submitted rows briefly highlighted.
+- **Performance**: quarterly scores, rating distribution, goals (KPIs) with progress, manager reviews. HR fills in reviews, employees see their own performance.
+- **Live updates**: clock-in and leave-request activity is simulated in the browser (no backend), with notifications and a pause button.
+- **HR Admin** and **Employee** roles (toggle at the top), blue theme, light/dark mode, responsive down to mobile.
 
-## Stack
-React 18, TypeScript, Vite. Tanpa library UI atau chart, grafik digambar dengan SVG.
+## Tech stack
+React 18, TypeScript, Vite. No UI or chart libraries; charts are hand-drawn SVG.
 
-## Menjalankan
+## Getting started
 ```bash
 npm install
-npm run dev      # pengembangan
-npm run build    # hasil: dist/index.html (satu file, siap di-host)
+npm run dev      # development
+npm run build    # output: dist/index.html (single file, ready to host)
 ```
 
-## Struktur
-- `src/data.ts` data dummy dan aturan saldo cuti
-- `src/store.tsx` state aplikasi (clock in, cuti, karyawan, kinerja, simulasi live)
-- `src/charts.tsx` grafik SVG (batang bertumpuk, garis, donat)
-- `src/pages/` lima halaman utama
-- `src/styles.css` design token dan komponen
+## Project structure
+- `src/data.ts` dummy data and leave balance rules
+- `src/store.tsx` app state (clock in, leave, employees, performance, live simulation)
+- `src/charts.tsx` SVG charts (stacked bar, line, donut)
+- `src/pages/` the five main pages
+- `src/styles.css` design tokens and components
 
-## Ide pengembangan
-Backend (Node/Express + PostgreSQL), autentikasi, modul payroll, ekspor laporan.
+## Ideas for next steps
+Backend (Node/Express + PostgreSQL), authentication, payroll module, report export.
