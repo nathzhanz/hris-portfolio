@@ -2,7 +2,7 @@
 
 Demo HRIS (Human Resource Information System) untuk portfolio. Semua data fiktif.
 
-**Demo langsung: [hris-portfolio.vercel.app](https://hris-portfolio.vercel.app/#dashboard)**
+**Demo langsung: [nusa-hris-portfolio.vercel.app] (https://nusa-hris-portfolio.vercel.app)**
 
 ## Fitur
 - **Dashboard**: ringkasan yang bisa diklik, grafik batang kehadiran (7/14/30 hari kerja) dengan tooltip, grafik garis tingkat kehadiran, donat status hari ini, karyawan per departemen, antrean persetujuan, aktivitas terbaru, dan daftar yang sedang cuti.
