@@ -2,7 +2,25 @@
 
 A demo HRIS (Human Resource Information System) built for my portfolio. All data is fictional.
 
-**Live Demo: [nusa-hris-portfolio.vercel.app] (https://nusa-hris-portfolio.vercel.app)**
+**Live demo: [hris-portfolio.vercel.app](https://hris-portfolio.vercel.app/#dashboard)**
+
+## Preview
+
+![Dashboard](images/dashboard.png)
+
+![Performance](images/kinerja.png)
+
+| Employees | Employee profile |
+|---|---|
+| ![Employees](images/karyawan.png) | ![Profile](images/profil.png) |
+
+| Attendance | Leave & permits |
+|---|---|
+| ![Attendance](images/absensi.png) | ![Leave](images/cuti.png) |
+
+| Dark mode |
+|--- |
+| ![Dark mode](images/dashboard-darkmode.pngg) |
 
 ## Features
 - **Dashboard**: clickable summary tiles, stacked bar chart of attendance (7/14/30 working days) with tooltips, attendance rate line chart, today's status donut, headcount by department, pending approvals, recent activity, and who is on leave today.
