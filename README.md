@@ -20,7 +20,7 @@ A demo HRIS (Human Resource Information System) built for my portfolio. All data
 
 | Dark mode |
 |--- |
-| ![Dark mode](images/dashboard-darkmode.pngg) |
+| ![Dark mode](images/dashboard-darkmode.png) |
 
 ## Features
 - **Dashboard**: clickable summary tiles, stacked bar chart of attendance (7/14/30 working days) with tooltips, attendance rate line chart, today's status donut, headcount by department, pending approvals, recent activity, and who is on leave today.
