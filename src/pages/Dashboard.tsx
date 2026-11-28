@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { DEPTS, TODAY, type AttendanceRecord } from '../data'
-import { addDays, fmtDate, lastWorkdays, timeAgo } from '../lib'
+import { addDays, fmtDate, iso, lastWorkdays, timeAgo } from '../lib'
 import { useStore } from '../store'
 import { Avatar, Icon, useNow } from '../ui'
 import { Donut, LineChart, StackedBars, type BarDatum, type BarSeg, type DonutSeg, type LinePoint } from '../charts'
@@ -40,6 +40,7 @@ export default function Dashboard({ go }: { go: (p: string) => void }) {
   const away = today.filter((a) => a.status === 'cuti' || a.status === 'izin')
   const newcomers = employees.filter((e) => e.join >= addDays(TODAY, -90)).length
 
+  const isWeekendNow = iso(new Date()) !== TODAY
   const hour = new Date().getHours()
   const greet = hour < 11 ? 'Selamat pagi' : hour < 15 ? 'Selamat siang' : hour < 18 ? 'Selamat sore' : 'Selamat malam'
 
@@ -102,6 +103,7 @@ export default function Dashboard({ go }: { go: (p: string) => void }) {
           <p className="muted">
             {fmtDate(TODAY, { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' })} · PT Nusa Kreasi Digital
           </p>
+          {isWeekendNow && <p className="muted small">Akhir pekan: menampilkan data hari kerja terakhir.</p>}
         </div>
         <div className="seg inline" role="group" aria-label="Periode grafik">
           {PERIODS.map((p) => (
